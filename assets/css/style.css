@@ -770,6 +770,7 @@ h1.piugrande{
 #visione_missione {
   background: url("../img/lorenz_attractor.png");
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   position: relative;
   color: #fff;
