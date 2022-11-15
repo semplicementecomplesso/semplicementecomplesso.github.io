@@ -784,6 +784,7 @@ h1.piugrande{
 #visione_missione {
   background: url("../img/lorenz_attractor.png");
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   position: relative;
   color: #fff;
@@ -1601,10 +1602,8 @@ font-weight: 30000;
 
 @media (min-width: 500px) {
   #subscribe input {
-    padding: 1px 1px;
     border-radius: 25px;
     font-size: 12px;
-
   }
 }
 
