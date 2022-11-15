@@ -325,6 +325,16 @@
       <p> Richiedi qui la versione estesa del programma, con il dettaglio dei contenuti scientifici e la descrizione degli esperimenti. </p>
     </div>
 
+    <form method="POST" action="http://formspree.io/you@email.com">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10 d-flex">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Il tuo indirizzo Email" required>
+          <button type="submit" class="ms-2" value="Send">Invia richiesta</button>
+        </div>
+      </div>
+    </form>
+
+<!--
     <form method="POST" action="#">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10 d-flex">
@@ -333,6 +343,7 @@
         </div>
       </div>
     </form>
+-->
 
   </div>
 </section>
@@ -380,6 +391,34 @@
 
     </div>
 
+<!-- FORM FOR GITHUB (thourgh Formspree) -->
+
+    <div class="form">
+      <form action="http://formspree.io/you@email.com" method="post" id="contactForm" role="form" class="php-email-form">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group col-md-6 mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Il tuo indirizzo Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Oggetto" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Il tuo messaggio" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Caricamento</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Il tuo messaggio è stato inviato. Grazie!</div>
+        </div>
+        <div class="text-center"><button type="submit" value="Send">Invia!</button></div>
+      </form>
+    </div>
+
+<!--
     <div class="form">
       <form action="asset/php/process.php" method="post" id="contactForm" role="form" class="php-email-form">
         <div class="row">
@@ -404,7 +443,7 @@
         <div class="text-center"><button type="submit">Invia!</button></div>
       </form>
     </div>
-
+-->
   </div>
 </section><!-- End Contact Section -->
 
