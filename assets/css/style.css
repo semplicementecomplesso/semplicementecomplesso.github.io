@@ -1068,6 +1068,7 @@ font-weight: 30000;
 @media(max-width: 500px) {
   #programma .btn {
     padding: 10px 20px;
+    border-radius: 25px;
     font-size: 14px;
   }
 }
@@ -1594,7 +1595,16 @@ font-weight: 30000;
 
 @media (min-width: 767px) {
   #subscribe input {
-    min-width: 400px;
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 500px) {
+  #subscribe input {
+    padding: 1px 1px;
+    border-radius: 25px;
+    font-size: 12px;
+
   }
 }
 
@@ -1619,6 +1629,14 @@ font-weight: 30000;
     margin-top: 10px;
   }
 }
+
+@media (max-width: 460px) {
+  #subscribe button {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Buy Tickets Section
