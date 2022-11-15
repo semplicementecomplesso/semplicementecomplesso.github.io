@@ -1065,6 +1065,14 @@ font-weight: 30000;
   }
 }
 
+@media(max-width: 500px) {
+  #programma .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
 #programma .btn:hover{
   background: rgb(66, 0, 84);
 }
