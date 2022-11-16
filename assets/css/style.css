@@ -1390,16 +1390,11 @@ font-weight: 30000;
   background: #e0072f;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   #subscribe button {
+    font-size: 12px;
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 460px) {
-  #subscribe button {
-    margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 25px;
   }
 }
 
