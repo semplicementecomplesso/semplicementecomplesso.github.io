@@ -525,7 +525,6 @@ h2.center {
   position: relative;
 }
 
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -556,12 +555,6 @@ h2.center {
   padding: 0 15px;
 }
 
-h1.piugrande{
-  font-size: 400%;
-  font-weight: lighter !important;
-  font-stretch: extra-expanded !important;
-
-}
 
 @media (max-width: 991px) {
   #hero .hero-container {
@@ -572,8 +565,9 @@ h1.piugrande{
 #hero h1 {
   color: #fff;
   font-family: "Bodoni Moda", serif;
-  font-size: 56px;
-  font-weight: 600;
+  font-size: 69px;
+  font-weight: 300;
+  font-stretch: extra-expanded;
 }
 
 #hero h1 span {
@@ -672,7 +666,7 @@ h1.piugrande{
 #hero .about-btn {
   font-family: "Bodoni Moda", serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 35px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -782,25 +776,61 @@ h1.piugrande{
 }
 
 /*--------------------------------------------------------------
-# Visione e Mission Section
+# Venue Section
 --------------------------------------------------------------*/
-#visione_missione {
-  background: url("../img/lorenz_attractor.png");
-  background-size: cover;
-  background-position: center;
+
+
+/*
+#venue {
+  background: url("../img/venue/multipendolo.mp4");
+  background-size: contain;
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
 }
+*/
 
-@media (min-width: 1024px) {
-  #visione_missione {
-    background-attachment: fixed;
-  }
+#venue {
+  padding: 60px 0 40px 0;
 }
 
-#visione_missione:before {
+#venue .container-fluid {
+  margin-bottom: 3px;
+  overflow:hidden;
+}
+
+#venue video {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  min-width: 110%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+#venue .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#venue .venue-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#venue .venue-info:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
   position: absolute;
@@ -810,25 +840,39 @@ h1.piugrande{
   right: 0;
 }
 
-#visione_missione h2 {
+#venue .venue-info h3 {
   font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 700;
   color: #fff;
 }
 
-#visione_missione h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
+@media (max-width: 574px) {
+  #venue .venue-info h3 {
+    font-size: 24px;
+  }
 }
 
-#visione_missione p {
-  font-size: 18px;
-  margin-bottom: 20px;
+#venue .venue-info p {
   color: #fff;
+  margin-bottom: 0;
+}
+
+#venue .venue-gallery-container {
+  padding-right: 12px;
+}
+
+#venue .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+#venue .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+#venue .venue-gallery:hover img {
+  transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
@@ -1033,6 +1077,56 @@ p.fondatore {
 
 
 /*--------------------------------------------------------------
+# Visione e Mission Section
+--------------------------------------------------------------*/
+#visione_missione {
+  background: url("../img/lorenz_attractor.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+
+@media (min-width: 1024px) {
+  #visione_missione {
+    background-attachment: fixed;
+  }
+}
+
+#visione_missione:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#visione_missione h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#visione_missione h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#visione_missione p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # programma Section
 --------------------------------------------------------------*/
 
@@ -1222,133 +1316,6 @@ font-weight: 30000;
 # Commenti Section
 --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# Venue Section
---------------------------------------------------------------*/
-#venue {
-  padding: 60px 0;
-}
-
-#venue .container-fluid {
-  margin-bottom: 3px;
-}
-
-#venue .venue-map iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-}
-
-#venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#venue .venue-info:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#venue .venue-info h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-}
-
-@media (max-width: 574px) {
-  #venue .venue-info h3 {
-    font-size: 24px;
-  }
-}
-
-#venue .venue-info p {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-#venue .venue-gallery-container {
-  padding-right: 12px;
-}
-
-#venue .venue-gallery {
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-}
-
-#venue .venue-gallery img {
-  transition: all ease-in-out 0.4s;
-}
-
-#venue .venue-gallery:hover img {
-  transform: scale(1.1);
-}
-
-/*--------------------------------------------------------------
-# Altri corsi Section
---------------------------------------------------------------*/
-#corsi {
-  padding: 60px 0;
-}
-
-#corsi .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-#corsi .hotel:hover .hotel-img img {
-  transform: scale(1.1);
-}
-
-#corsi .hotel-img {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#corsi .hotel-img img {
-  transition: 0.3s ease-in-out;
-}
-
-#corsi h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#corsi a {
-  color: #152b79;
-}
-
-#corsi a:hover {
-  color: #8E0045;
-}
-
-#corsi .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#corsi .stars i {
-  color: rgb(255, 195, 29);
-}
-
-#corsi p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #060c22;
-  font-style: italic;
-  font-size: 15px;
-}
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -1434,6 +1401,65 @@ font-weight: 30000;
     transform: scale(1.15);
     margin-top: 6px;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Altri corsi Section
+--------------------------------------------------------------*/
+#corsi {
+  padding: 60px 0;
+}
+
+#corsi .hotel {
+  border: 1px solid #e0e5fa;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+#corsi .hotel:hover .hotel-img img {
+  transform: scale(1.1);
+}
+
+#corsi .hotel-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#corsi .hotel-img img {
+  transition: 0.3s ease-in-out;
+}
+
+#corsi h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+#corsi a {
+  color: #152b79;
+}
+
+#corsi a:hover {
+  color: #8E0045;
+}
+
+#corsi .stars {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+#corsi .stars i {
+  color: rgb(255, 195, 29);
+}
+
+#corsi p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: #060c22;
+  font-style: italic;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
