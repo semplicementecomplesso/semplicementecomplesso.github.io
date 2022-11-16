@@ -576,7 +576,7 @@ h2.center {
 
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 }
 
@@ -584,6 +584,7 @@ h2.center {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -683,6 +684,12 @@ h2.center {
 #hero .about-btn:hover {
   background: #8E0045;
   color: #fff;
+}
+
+@media (max-width: 991px) {
+  #hero .about-btn {
+    font-size: 22px;
+  }
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -1137,7 +1144,6 @@ font-weight: 30000;
 
 #programma .btn {
   display: flex;
-  width: 30%;
   border: 10;
   padding: 20px 30px;
   cursor: pointer;
@@ -1165,8 +1171,6 @@ font-weight: 30000;
 
 @media(max-width: 500px) {
   #programma .btn {
-    padding: 10px 20px;
-    border-radius: 30px;
     font-size: 16px;
   }
 }
@@ -1310,6 +1314,93 @@ font-weight: 30000;
   font-style: regular;
   color: #152b79;
   margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+#subscribe {
+  padding: 60px;
+  background: url(../img/cosmicweb.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#subscribe:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  #subscribe {
+    background-attachment: fixed;
+  }
+}
+
+#subscribe .section-header h2,
+#subscribe p {
+  color: #fff;
+}
+
+#subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+@media (min-width: 767px) {
+  #subscribe input {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 500px) {
+  #subscribe input {
+    border-radius: 25px;
+    font-size: 12px;
+  }
+}
+
+
+#subscribe button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #8E0045;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+#subscribe button:hover {
+  background: #e0072f;
+}
+
+@media (max-width: 460px) {
+  #subscribe button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  #subscribe button {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1578,91 +1669,6 @@ font-weight: 30000;
 #faq .faq-list .collapsed .icon-close {
   display: none;
   transition: 0.6s;
-}
-
-/*--------------------------------------------------------------
-# Subscribe Section
---------------------------------------------------------------*/
-#subscribe {
-  padding: 60px;
-  background: url(../img/cosmicweb.jpg) center center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-#subscribe:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-@media (min-width: 1024px) {
-  #subscribe {
-    background-attachment: fixed;
-  }
-}
-
-#subscribe .section-header h2,
-#subscribe p {
-  color: #fff;
-}
-
-#subscribe input {
-  background: #fff;
-  color: #060c22;
-  border: 0;
-  outline: none;
-  margin: 0;
-  padding: 9px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-}
-
-@media (min-width: 767px) {
-  #subscribe input {
-    min-width: 400px;
-  }
-}
-
-@media (min-width: 500px) {
-  #subscribe input {
-    border-radius: 25px;
-    font-size: 12px;
-  }
-}
-
-#subscribe button {
-  border: 0;
-  padding: 9px 25px;
-  cursor: pointer;
-  background: #8E0045;
-  color: #fff;
-  transition: all 0.3s ease;
-  outline: none;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-#subscribe button:hover {
-  background: #e0072f;
-}
-
-@media (max-width: 460px) {
-  #subscribe button {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 460px) {
-  #subscribe button {
-    margin-top: 10px;
-    border-radius: 10px;
-  }
 }
 
 
