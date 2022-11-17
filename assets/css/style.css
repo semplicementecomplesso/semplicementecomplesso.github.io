@@ -1501,23 +1501,27 @@ font-weight: 30000;
   padding: 60px 0;
 }
 
-#corsi .hotel {
+#corsi .finestra-corso {
   border: 1px solid #e0e5fa;
   background: #fff;
   margin-bottom: 30px;
 }
 
-#corsi .hotel:hover .hotel-img img {
+#corsi .finestra-corso:hover .finestra-corso-img img {
   transform: scale(1.1);
 }
 
-#corsi .hotel-img {
+#corsi .finestra-corso-img {
   overflow: hidden;
   margin-bottom: 15px;
 }
 
-#corsi .hotel-img img {
+#corsi .finestra-corso-img img {
   transition: 0.3s ease-in-out;
+}
+
+#corsi .finestra-corso-img .sostenibilità {
+  padding: 20px;
 }
 
 #corsi h3 {
