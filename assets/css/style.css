@@ -1351,6 +1351,7 @@ font-weight: 30000;
 
 #subscribe input {
   max-width: 400px;
+  min-width: 400px;
   background: #fff;
   color: #060c22;
   border: 0;
