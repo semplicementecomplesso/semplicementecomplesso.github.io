@@ -1881,6 +1881,25 @@ font-weight: 30000;
   background: #e0072f;
 }
 
+/* DA USARE CON FORMSPREE - author: Seb */
+#contattaci .pretty_formspree button[type=submit] {
+  background: #8E0045;
+  border: 0;
+  padding: 10px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#contattaci .pretty_formspree button[type=submit]:hover {
+  background: #e0072f;
+}
+
+/* ----------------------------------------------- */
+
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
