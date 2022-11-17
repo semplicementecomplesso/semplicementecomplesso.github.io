@@ -417,6 +417,10 @@
       <p> Richiedi qui la versione estesa del programma, con il dettaglio dei contenuti scientifici e la descrizione degli esperimenti. </p>
     </div>
 
+    <!-- FORM FOR GITHUB (thourgh Formspree)
+    NOTA BENE! SONO RICEVIBILI MASSIMO 50 SUBMISSION AL MESE!!! Se no bisogna abbonarsi
+    -->
+
     <form method="POST" action="https://formspree.io/f/xkneyyzk">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10 d-flex">
@@ -483,8 +487,11 @@
 
     </div>
 
-<!-- FORM FOR GITHUB (thourgh Formspree) -->
+<!-- FORM FOR GITHUB (thourgh Formspree)
+NOTA BENE! SONO RICEVIBILI MASSIMO 50 SUBMISSION AL MESE!!! Se no bisogna abbonarsi
+-->
 
+<!-- FORMATO DEL TEMPLATE + FORMSPREE
     <div class="form">
       <form action="https://formspree.io/f/xkneyyzk" method="post" id="contactForm" role="form" class="php-email-form">
         <div class="row">
@@ -506,7 +513,36 @@
           <div class="error-message"></div>
           <div class="sent-message">Il tuo messaggio è stato inviato. Grazie!</div>
         </div>
-        <div class="text-center"><button type="submit" value="Send">Invia!</button></div>
+        <div class="text-center">
+          <button type="submit" value="Send">Invia!</button>
+        </div>
+      </form>
+    </div>
+-->
+
+<!-- Formato FORMSPREE -->
+
+    <div class="form">
+      <form class="php-email-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xkneyyzk" method="post">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <input class="form-control" type="text" name="name" id="full-name" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group col-md-6 mt-3 mt-md-0">
+            <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="Il tuo indirizzo Email" required>
+          </div>
+          <div class="form-group mt-3">
+            <input class="form-control" type="subject" name="subject" id="email-subject" value="Oggetto">
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" rows="5" name="message" id="message" placeholder="Il tuo messaggio" required></textarea>
+          </div>
+          <div class="my-3">
+          <!-- Spazio -->
+          </div>
+          <div class="text-center">
+            <button type="submit" value="Send">Invia!</button>
+          </div>
       </form>
     </div>
 
