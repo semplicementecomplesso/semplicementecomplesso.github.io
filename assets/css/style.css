@@ -1370,6 +1370,7 @@ font-weight: 30000;
   #subscribe input {
     border-radius: 25px;
     font-size: 12px;
+    min-width: 300px;
   }
 }
 
@@ -1392,8 +1393,7 @@ font-weight: 30000;
 
 @media (max-width: 500px) {
   #subscribe button {
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 14px;
     border-radius: 25px;
   }
 }
