@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #8E0045;
+  color: #8e0045;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -23,7 +23,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: #d46a9d;
   outline: none;
   text-decoration: none;
 }
@@ -798,6 +798,29 @@ h2.center {
 }
 */
 
+#venue a {
+  color: #e0609f;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+
+#venue a:hover,
+#venue a:active,
+#venue a:focus {
+  color: #f0a8cb;
+  outline: none;
+  text-decoration: none;
+}
+
+
+#venue button{
+  width: 130px;
+  color: #e0609f;
+
+}
+
 #venue {
   padding: 60px 0 40px 0;
 }
@@ -809,7 +832,7 @@ h2.center {
 
 #venue video {
   position: absolute;
-  top: 110%;
+  top: 370%;
   left: 50%;
   min-width: 110%;
   min-height: 100%;
