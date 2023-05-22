@@ -804,6 +804,10 @@ h2.center {
   transition: 0.5s;
 }
 
+#venue ul {
+  color: #fff
+}
+
 
 
 #venue a:hover,
