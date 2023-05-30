@@ -917,6 +917,10 @@ p.fondatore {
   text-align: center;
 }
 
+#speakers .bolder b {
+  font-weight: 1000;
+}
+
 #speakers button{
   display: flex;
   width: 110px;
